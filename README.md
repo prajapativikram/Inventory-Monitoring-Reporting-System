@@ -167,14 +167,6 @@ Screenshots/
    analytics.png
 ```
 
-Example:
-
-```
-Dashboard
-
-<img width="1919" height="1031" alt="dashboard" src="https://github.com/user-attachments/assets/b2ec919d-88be-4d8a-8552-d4716790fa77" />
-
-```
 
 ---
 
