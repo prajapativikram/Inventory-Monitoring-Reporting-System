@@ -160,16 +160,21 @@ http://localhost:8080
 # 📸 Screenshots
 
 ```
-screenshots/
+Screenshots/
    dashboard.png
-   products.png
-   suppliers.png
+   login.png
+   register.png
+   analytics.png
 ```
 
 Example:
 
 ```
-![Dashboard](screenshots/dashboard.png)
+![Image alt](https://github.com/prajapativikram/Inventory-Monitoring-Reporting-System/blob/312935bb0dd98acd45f207cc00712d6c280f4c4b/Screenshots/dashboard.png)
+```
+
+```
+![Register](Screenshots/register.png)
 ```
 
 ---
