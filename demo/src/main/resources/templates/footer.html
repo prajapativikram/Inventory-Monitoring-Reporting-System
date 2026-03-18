@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+
+        /* Page layout to keep footer at bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* main page content */
+        .main-content{
+            flex: 1;
+        }
+
+        /* Footer styling */
+
+        .footer {
+            background: #111827;
+            color: white;
+            margin: 40px 40px 20px 40px;   /* left & right margin */
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Footer layout */
+
+        .footer-container{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+
+        .footer-section{
+            min-width:200px;
+            margin-bottom:15px;
+        }
+
+        .footer-section h3,
+        .footer-section h4{
+            margin-bottom:10px;
+        }
+
+        .footer-section p,
+        .footer-section a{
+            font-size:14px;
+            color:#d1d5db;
+            text-decoration:none;
+            display:block;
+            margin:6px 0;
+        }
+
+        .footer-section a:hover{
+            color:white;
+            transition:0.3s;
+        }
+
+        /* bottom text */
+
+        .footer-bottom{
+            border-top:1px solid #374151;
+            margin-top:20px;
+            padding-top:10px;
+            text-align:center;
+            font-size:13px;
+            color:#9ca3af;
+        }
+
+        /* hover animation */
+
+        .footer-section:hover{
+            transform:translateY(-3px);
+            transition:0.3s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3><i class="fa-solid fa-box"></i> Inventory System</h3>
+            <p>
+                Enterprise inventory management system for tracking
+                products, monitoring stock levels and generating reports.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Navigation</h4>
+            <a th:href="@{/}">
+                <i class="fa-solid fa-chart-line"></i> Dashboard
+            </a>
+            <a th:href="@{/products}">
+                <i class="fa-solid fa-boxes-stacked"></i> Products
+            </a>
+            <a th:href="@{/stock-logs}">
+                <i class="fa-solid fa-clipboard-list"></i> Stock Logs
+            </a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Security</h4>
+            <p><i class="fa-solid fa-lock"></i> Role Based Access</p>
+            <p><i class="fa-solid fa-shield-halved"></i> Secure Authentication</p>
+            <p><i class="fa-solid fa-database"></i> Protected Database</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><i class="fa-solid fa-envelope"></i> support@inventory.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Enterprise Inventory Management System | Build By ❣️ Vikram Kumar
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="layout :: body">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<style>
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+    }
+</style>
+<div class="card shadow-sm p-3">
+    <h4>Stock Logs</h4>
+
+    <table class="table table-striped mt-3">
+        <thead class="table-dark">
+        <tr>
+            <th>Product ID</th>
+            <th>Type</th>
+            <th>Quantity</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="log : ${logs}">
+            <td th:text="${log.productId}"></td>
+            <td th:text="${log.type}"></td>
+            <td th:text="${log.quantity}"></td>
+            <td th:text="${log.date}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="/" class="btn btn-secondary">Back</a>
+</div>
+<!--<div th:replace="footer :: footer"></div>-->
+</html>
