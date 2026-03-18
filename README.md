@@ -170,11 +170,10 @@ Screenshots/
 Example:
 
 ```
-![Image alt](https://github.com/prajapativikram/Inventory-Monitoring-Reporting-System/blob/312935bb0dd98acd45f207cc00712d6c280f4c4b/Screenshots/dashboard.png)
-```
+Dashboard
 
-```
-![Register](Screenshots/register.png)
+<img width="1919" height="1031" alt="dashboard" src="https://github.com/user-attachments/assets/b2ec919d-88be-4d8a-8552-d4716790fa77" />
+
 ```
 
 ---
